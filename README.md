@@ -11,6 +11,8 @@ It will allow to use php script on form submit.
 Start server. Go to http://localhost/. 
 Fill all required fields of the form.
 Submit. Get final page of succesful account creation.
+
+```
 ```
 If you want to see failed account creation page:
 Go to /dev directory, run 'gulp compiler', it will init browser virtual host
