@@ -1,0 +1,121 @@
+<div class="application-map">
+	<span class="ss1">Personal information</span>
+	<span class="ss2">Employment Information</span>
+	<span class="ss3">Account Information</span>
+	<span class="ss4">Documentation</span>
+</div>
+
+<form id="accountForm" method="POST" action="action.php">
+	<div class="form-fieldset">
+		<!-- Personal info -->
+		<div class="section-swipe" id="ss1">
+			<div class="elements form-title">
+				<label for="title">Title</label>
+				<input  type="text" placeholder="Mr" name="title"  size="30" />
+			</div>
+			<div class="elements">
+				<label for="first-name">First Name*</label>
+				<input type="text"  placeholder="First name" name="first-name"  size="25" required="required" />
+			</div>
+			<div class="elements">
+				<label for="middle-name">Middle Name</label>
+				<input  type="text"  placeholder="Middle name" name="middle-name" size="25" />
+			</div>
+			<div class="elements">
+				<label for="last-name">Last Name*</label>
+				<input type="text" placeholder="Last name" name="last-name" size="25" required="required"/>
+			</div>
+			<div class="elements">
+				<label for="home-phone">Home phone</label>
+				<input type="number" placeholder="+66(123)4567890" name="home-phone" />
+			</div>
+			<div class="elements">
+				<label for="mobile-phone">Mobile phone*</label>
+				<input type="number" placeholder="+66(123)4567890" name="mobile-phone" required="required" />
+			</div>
+			<div class="clear"></div>
+			<div class="elements">
+				<label for="email">E-mail*</label>
+				<input type="email" id="email" placeholder="email@email.com" name="email" required="required" />
+			</div>
+			<div class="elements">
+				<label for="address">Address*</label>
+				<input type="text" placeholder="10110, Thailand, Bangkok, Rama 4" name="address" required="required" />
+			</div>
+			<div class="elements">
+				<label for="ssn">Social security number*</label>
+				<input type="text" placeholder="1234567890" name="ssn" required="required" />
+			</div>
+		</div>
+
+		<!-- Employment info -->
+		<div class="section-swipe" id="ss2">
+			<div class="elements">
+				<label for="employer-name">Employers Name:</label>
+				<input  required="required" type="text"  placeholder="Employers Name" name="employer-name"  size="35" required="required" />
+			</div>
+			<div class="elements">
+				<label for="employer-address">Employers Address:</label>
+				<input type="text" placeholder="10110, Thailand, Bangkok, Rama 4" name="employer-address" />
+			</div>
+			<div class="elements">
+				<label for="work-phone">Work Phone:</label>
+				<input type="number" placeholder="+66(123)4567890" name="work-phone" size="20" required="required" />
+			</div>
+			<div class="elements">
+				<label for="position">Job Position:</label>
+				<input type="text" placeholder="Front-end developer" name="position" required="required"/>
+			</div>
+		</div>
+
+		<!-- Account info -->
+		<div class="section-swipe" id="ss3">
+			<div class="elements">
+				<label for="account-type">Account Type:</label>
+				<select name="account-type" required="required">
+				   <option value="Deposit">Deposit</option>
+				   <option value="Savings" selected="selected">Savings</option>
+			   	</select>
+			</div>
+			<div class="elements">
+				<label for="purpose">Purpose of bank account:</label>
+				<input type="text" placeholder="Purpose of bank account usage" name="purpose" required="required"/>
+			</div>
+			<div class="elements">
+				<label for="source-money">Source of funds:</label>
+				<input type="text" placeholder="Where will the money come from?" name="source-money" required="required" />
+			</div>
+			<div class="elements">
+				<label for="source-info">Information:</label>
+				<input type="text" placeholder="How did you hear about us?" name="source-info" required="required" />
+			</div>
+		</div>
+
+		<!-- upload files -->
+		<div class="section-swipe" id="ss4">
+			<div class="elements">
+				<label for="utility_bill">Upload copy of utility bill</label>
+				<input type="file" id="utility_bill" name="utility_bill" value="" accept="image/*" class="hidden-input" />
+				<input type="text" class="file-name" id="utility_billName" value="" disabled="disabled" />
+			</div>
+			<div class="elements">
+				<label for="social_img">Upload copy of social security number</label>
+				<input type="file" id="social_img" name="social_img" value="" accept="image/*" class="hidden-input">
+				<input type="text" class="file-name" id="social_imgName" value="" disabled="disabled" />
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-btns" id="navForm">
+		<a href="javascript:void(0);" class="prev">Previous</a>
+		<div class="save-form" id="saveForm">
+			<span>Save form</span>
+		</div>
+		<a href="javascript:void(0);" class="next">Next</a>
+	</div>
+
+	<div id="submitBtn" class="submit-box hide">
+		<input type="submit" name="submit" class="submit-btn" value="Submit" />
+	</div>
+	<!-- <span class="elements">Press "Ctrl + Shift + J" to see sent JSON in console: <span> -->
+</form>

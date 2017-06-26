@@ -1,0 +1,49 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    zoom: 1;
+    overflow: hidden;
+    color: @niceblack;
+    line-height: 1.5;
+
+    @media only screen and (max-width: @screen-xs) {
+    	width: 100%;
+    }
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.hide {
+	display: none;
+}
+
+.clear {
+	&:after {
+		content: " "; /* Older browser do not support empty content */
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
