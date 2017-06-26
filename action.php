@@ -16,11 +16,8 @@
 
     function json_file() {
         $response = $_POST;
-        //$return["json"] = json_encode($return);
         echo json_encode($response);
 
         file_put_contents('users.json', json_encode($response), FILE_APPEND);
-        // fwrite($fp, json_encode($response));
-        // fclose($fp);
     }
 ?>
